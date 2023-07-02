@@ -58,18 +58,22 @@
         background-color: rgb(230, 230, 62);
         border: 1px black solid;
       }
-  
-      #gatelab {
-        opacity: 0;
-        top: 323px;
-    left: 359px;
-        background-color: rgb(230, 230, 62);
-        border: 1px black solid;
-      }
-      #gatebut {
-        top: 395px;
-        left: 570px;
-      }
+
+
+      .clock2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #17D4FE;
+        font-size: 60px;
+        font-family: Orbitron;
+        letter-spacing: 7px;
+       
+    
+    
+    }
+      
       label {
         position: absolute;
       }
