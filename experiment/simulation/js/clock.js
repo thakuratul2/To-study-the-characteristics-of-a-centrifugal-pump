@@ -13,5 +13,10 @@ const secondHand = document.querySelector('.second-hand');
 }
  
 setInterval(setDate, 1000);
+setTimeout(stopTime,30000);
+
+function stopTime(){
+    clearInterval(setDate);
+}
  
 setDate();
