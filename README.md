@@ -4,7 +4,7 @@
 <b>Discipline | <b>Chemical Engineering
 :--|:--|
 <b> Lab | <b> Chemical Engineering Fluid Mechanics Lab
-<b> Experiment|     <b> Determination of Cc, Cv, Cd of orifices
+<b> Experiment|     <b> To study the characteristics of a centrifugal pump
 
 
 ### About the Experiment 
