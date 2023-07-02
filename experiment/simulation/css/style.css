@@ -29,19 +29,7 @@
         display: flex;
         flex-direction: row;
       }
-      .valve {
-        height: 30px;
-        width: 30px;
-        position: absolute;
-
-        border: none;
-        background-color: transparent;
-        background-image: url("../images/valve.svg");
-        background-size: 100%;
-        transition-property: transform;
-        transition-duration: 1s;
-        outline: none;
-      }
+    
       #outlet {
            top: 298px;
     left: 100px;
@@ -59,21 +47,65 @@
         border: 1px black solid;
       }
 
-
-      .clock2 {
+/* CLock Design */
+      .wrapper{
+        height: 64px;
+        width: 311px;
+        position: relative;
+       /* // background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0); */
+        border-radius: 10px;
+        cursor: default;
+        animation: animate 1.5s linear infinite;
+        bottom: 463px;
+        right: 175px;
+      }
+      .wrapper .display,
+      .wrapper span{
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        color: #17D4FE;
-        font-size: 60px;
-        font-family: Orbitron;
-        letter-spacing: 7px;
-       
-    
-    
-    }
+        transform: translate(-50%, -50%);
+      }
+      .wrapper .display{
+        z-index: 999;
+        height: 68px;
+        width: 299px;;
+        background: #1b1b1b;
+        border-radius: 6px;
+        text-align: center;
+      }
+      .display #time{
+        line-height: 85px;
+        color: #fff;
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 1px;
+       background: wheat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate 1.5s linear infinite;
+      }
+      @keyframes animate {
+        100%{
+          filter: hue-rotate(360deg);
+        }
+      }
+      .wrapper span{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background: inherit;
+      }
+      .wrapper span:first-child{
+        filter: blur(7px);
+      }
+      .wrapper span:last-child{
+        filter: blur(20px);
+      }
       
+
+
+
       label {
         position: absolute;
       }
@@ -106,9 +138,7 @@
         font-weight: bold;
       }
      
-.blub{
-  
-}
+/* Led COde */
 .container {
 	background-size: cover;
   background: rgb(226,226,226); /* Old browsers */
@@ -177,135 +207,26 @@
     to { background-color: #FF0; }
 }
 
-/* clock design*/
-.clock {
-  background: #2d5171;
-  width: 100px;
-  height: 100px;
+/*clock button */
+.btn_container2{
+  
   position: relative;
   
-border: 7px solid #16344f;
-box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
-              inset 4px 4px 10px rgba(0,0,0,0.5),
-              inset -4px -4px 10px rgba(67,67,67,0.5),
-              4px 4px 10px rgba(0,0,0,0.3);
-border-radius: 50%;
-bottom: 470px;
-right: 280px;
-
-}
-.outer-clock-face {
-  position: relative;
-  background: #2d5171;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-}
-
-.outer-clock-face::after {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  transform: rotate(90deg)
-}
-
-.outer-clock-face::after,
-.outer-clock-face::before,
-.outer-clock-face .marking{
-  content: '';
-  position: absolute;
-  width: 5px;
-  height: 100%;
-  background: #c8444a;
-  z-index: 0;
-  left: 49%;
-}
-.outer-clock-face .marking {
-  background: #6391bb;
-  width: 3px;
-}
-
-.outer-clock-face .marking.marking-one {
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-  transform: rotate(30deg)
-}
-
-.outer-clock-face .marking.marking-two {
-  -webkit-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  transform: rotate(60deg)
-}
-
-.outer-clock-face .marking.marking-three {
-  -webkit-transform: rotate(120deg);
-  -moz-transform: rotate(120deg);
-  transform: rotate(120deg)
-}
-
-.outer-clock-face .marking.marking-four {
-  -webkit-transform: rotate(150deg);
-  -moz-transform: rotate(150deg);
-  transform: rotate(150deg)
-}
-.inner-clock-face {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
-  background: #2d5171;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  z-index: 1;
+  bottom: 436px;
+    right: 180px;
   
 }
-
-.inner-clock-face::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 16px;
-  height: 16px;
-  border-radius: 18px;
-  margin-left: -9px;
-  margin-top: -6px;
-  background: #4d4b63;
-  z-index: 11;
-  border: 2px solid #d9701b;
+.bulb_btn2{
+  font-family: 'Baloo Bhai 2', cursive;
+  width: 85px;
+  height: 45px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #34dab4;
+  font-size: 15px;
 }
 
-.hand {
-  width: 50%;
-  right: 50%;
-  height: 6px;
-  background: #e8d752;
-  position: absolute;
-  top: 50%;
-  border-radius: 6px;
-  transform-origin: 100%;
-  transform: rotate(90deg);
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}
- 
-.hand.hour-hand {
-  width: 30%;
-  z-index: 3;
-}
- 
-.hand.min-hand {
-  height: 3px;
-  z-index: 10;
-  width: 40%;
-}
- 
-.hand.second-hand {
-  background: #ee791a;
-  width: 45%;
-  height: 2px;
-}
 
 .led-green {
   margin: 0 auto;
@@ -316,9 +237,7 @@ right: 280px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
 }
 
-.off{
-  background-color: gray;
-}
+
 .btn_container{
   margin-top: 50px;
   position: relative;
