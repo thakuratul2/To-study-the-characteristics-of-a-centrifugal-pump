@@ -1,23 +1,118 @@
-setInterval(()=>{
-  const time = document.querySelector(".display #time");
-  let date = new Date();
-  let zeroTime = new Date(date);
-  let hours = zeroTime.getHours(0);
-  let minutes = zeroTime.getMinutes(0);
-  let seconds = zeroTime.getSeconds(0);
-  //let day_night = "AM";
-  if(hours > 12){
-   // day_night = "PM";
-    hours = hours - 12;
+// setInterval(()=>{
+//   const time = document.querySelector(".display #time");
+//   let date = new Date();
+//   let zeroTime = new Date(date);
+//   let hours = zeroTime.getHours(0);
+//   let minutes = zeroTime.getMinutes(0);
+//   let seconds = zeroTime.getSeconds(0);
+//   //let day_night = "AM";
+//   if(hours > 12){
+//    // day_night = "PM";
+//     hours = hours - 12;
+//   }
+//   if(seconds < 10){
+//     seconds = "0" + seconds;
+//   }
+//   if(minutes < 10){
+//     minutes = "0" + minutes;
+//   }
+//   if(hours < 10){
+//     hours = "0" + hours;
+//   }
+//   time.textContent = hours + ":" + minutes + ":" + seconds;
+// });
+
+class Timer {
+  constructor(root) {
+    root.innerHTML = Timer.getHTML();
+
+    this.el = {
+      minutes: root.querySelector(".timer__part--minutes"),
+      seconds: root.querySelector(".timer__part--seconds"),
+      control: root.querySelector(".timer__btn--control"),
+      reset: root.querySelector(".timer__btn--reset")
+    };
+
+    this.interval = null;
+    this.remainingSeconds = 0;
+
+    this.el.control.addEventListener("click", () => {
+      if (this.interval === null) {
+        this.start();
+      } else {
+        this.stop();
+      }
+    });
+
+    this.el.reset.addEventListener("click", () => {
+      const inputMinutes = prompt("Enter time(mintues) to calculate the value: ");
+
+      if (inputMinutes < 60) {
+        this.stop();
+        this.remainingSeconds = inputMinutes * 60;
+        this.updateInterfaceTime();
+      }
+    });
   }
-  if(seconds < 10){
-    seconds = "0" + seconds;
+
+  updateInterfaceTime() {
+    const minutes = Math.floor(this.remainingSeconds / 60);
+    const seconds = this.remainingSeconds % 60;
+
+    this.el.minutes.textContent = minutes.toString().padStart(2, "0");
+    this.el.seconds.textContent = seconds.toString().padStart(2, "0");
   }
-  if(minutes < 10){
-    minutes = "0" + minutes;
+
+  updateInterfaceControls() {
+    if (this.interval === null) {
+      this.el.control.innerHTML = `<span class="material-icons">play_arrow</span>`;
+      this.el.control.classList.add("timer__btn--start");
+      this.el.control.classList.remove("timer__btn--stop");
+    } else {
+      this.el.control.innerHTML = `<span class="material-icons">pause</span>`;
+      this.el.control.classList.add("timer__btn--stop");
+      this.el.control.classList.remove("timer__btn--start");
+    }
   }
-  if(hours < 10){
-    hours = "0" + hours;
+
+  start() {
+    if (this.remainingSeconds === 0) return;
+
+    this.interval = setInterval(() => {
+      this.remainingSeconds--;
+      this.updateInterfaceTime();
+
+      if (this.remainingSeconds === 0) {
+        this.stop();
+      }
+    }, 1000);
+
+    this.updateInterfaceControls();
   }
-  time.textContent = hours + ":" + minutes + ":" + seconds;
-});
+
+  stop() {
+    clearInterval(this.interval);
+
+    this.interval = null;
+
+    this.updateInterfaceControls();
+  }
+
+  static getHTML() {
+    return `
+			<span class="timer__part timer__part--minutes">00</span>
+			<span class="timer__part">:</span>
+			<span class="timer__part timer__part--seconds">00</span>
+			<button type="button" class="timer__btn timer__btn--control timer__btn--start">
+				<span class="material-icons">play_arrow</span>
+			</button>
+			<button type="button" class="timer__btn timer__btn--reset">
+				<span class="material-icons">timer</span>
+			</button>
+		`;
+  }
+}
+
+new Timer(
+	document.querySelector(".timer")
+);

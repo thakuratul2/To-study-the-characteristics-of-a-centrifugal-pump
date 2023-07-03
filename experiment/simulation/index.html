@@ -4,6 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
   <title>Experiment: Centrifugal Pump</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -45,16 +46,17 @@
         <!-- <img src="https://i.postimg.cc/KjK1wL3c/bulb-off.png" id="bulb" width="200"> -->
 
         <!--CLock design-->
-        <div class="wrapper">
-          <div class="display">
-             <div id="time"></div>
-          </div>
-          <span></span>
-          <span></span>
-          
-       </div>
-       <div class="btn_container2"><button id="resetButton" class="bulb_btn2">Start the Clock</button>
-       </div>
+        <div class="timer">
+          <span class="timer__part timer__part--mintues">00</span>
+          <span class="timer__part">:</span>
+          <span class="timer__part timer__part--seconds">00</span>
+          <button class="timer__btn timer__btn--control timer__btn--start" type="button">
+            <span class="material-icons">play_arrow</span>
+          </button>
+          <button type="button" class="timer__btn timer__btn--reset">
+            <span class="material-icons">timer</span>
+          </button>
+        </div>
      
       
     </center>

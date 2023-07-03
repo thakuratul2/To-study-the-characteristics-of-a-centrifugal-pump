@@ -47,64 +47,42 @@
         border: 1px black solid;
       }
 
-/* CLock Design */
-      .wrapper{
-        height: 64px;
-        width: 311px;
-        position: relative;
-       /* // background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0); */
-        border-radius: 10px;
-        cursor: default;
-        animation: animate 1.5s linear infinite;
-        bottom: 463px;
-        right: 175px;
-      }
-      .wrapper .display,
-      .wrapper span{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .wrapper .display{
-        z-index: 999;
-        height: 68px;
-        width: 299px;;
-        background: #1b1b1b;
-        border-radius: 6px;
-        text-align: center;
-      }
-      .display #time{
-        line-height: 85px;
-        color: #fff;
-        font-size: 50px;
-        font-weight: 600;
-        letter-spacing: 1px;
-       background: wheat;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: animate 1.5s linear infinite;
-      }
-      @keyframes animate {
-        100%{
-          filter: hue-rotate(360deg);
-        }
-      }
-      .wrapper span{
-        height: 100%;
-        width: 100%;
-        border-radius: 10px;
-        background: inherit;
-      }
-      .wrapper span:first-child{
-        filter: blur(7px);
-      }
-      .wrapper span:last-child{
-        filter: blur(20px);
-      }
-      
+/*CLock Design */
 
+.timer {
+  font-family: sans-serif;
+  display: inline-block;
+  padding: 4px 13px;
+  border-radius: 29px;
+  background: #8fe4e3;
+  position: relative;
+    bottom: 470px;
+    right: 190px;
+}
 
+.timer__part {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.timer__btn {
+  width: 50px;
+  height: 50px;
+  margin-left: 16px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background: #8208e6;
+  cursor: pointer;
+}
+
+.timer__btn--start {
+  background: #00b84c;
+}
+
+.timer__btn--stop {
+  background: #ff0256;
+}
 
       label {
         position: absolute;
@@ -208,24 +186,7 @@
 }
 
 /*clock button */
-.btn_container2{
-  
-  position: relative;
-  
-  bottom: 436px;
-    right: 180px;
-  
-}
-.bulb_btn2{
-  font-family: 'Baloo Bhai 2', cursive;
-  width: 85px;
-  height: 45px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: #34dab4;
-  font-size: 15px;
-}
+
 
 
 .led-green {
