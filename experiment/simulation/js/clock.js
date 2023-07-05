@@ -80,6 +80,7 @@ class Timer {
 
     this.interval = setInterval(() => {
       this.remainingSeconds--;
+      
       this.updateInterfaceTime();
 
       if (this.remainingSeconds === 0) {
