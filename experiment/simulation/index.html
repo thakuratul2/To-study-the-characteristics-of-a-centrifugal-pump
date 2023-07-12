@@ -19,62 +19,228 @@
       <div id="struct">
         <img src="./images/lab_4.png" alt="" class="baseimg">
         
-        <div class="container3">
-          <div class="led-box">
-            <div id="led-yellow" class="off"></div>
-            <p>LED</p>
-          </div>
-         
-        </div>
-
-        
        
+          
+            <div id="led-yellow"  class="off">
+              <img src="./images/offled.png" alt="" class="offlight">
+              
+            </div>
+            <div id="led"  class="on">
+              
+              <img src="./images/led-yellow.gif" alt="" id="blink" class="onlight">
+            </div>
+         <p class="para">Start timer</p>
+         <p class="para1">Set timer</p>
+        <button id="on" class="bulb_btn" onclick="bulb_on()">Click to <br> on LED</button>
 
-      <div class="btn_container"><button id="on" class="bulb_btn" onclick="bulb_on()">on</button>
-        <button id="off" class="bulb_btn" onclick="bulb_off()">off</button></div>
-
-
-
-        <!-- <label id="outlab">
-          turn the outlet valve to set the flow rate</label> -->
-        <!-- <button id="outlet" class="valve" onclick="clickedValve()"></button>
-        <label id="gatelab">turn the gate valve off</label>
-
-        <button id="motbut" class="valve" onclick="clickedMot()"></button>
-        <label id="motlab">push the button first to start</label>
-        <button id="motbut" class="valve" onclick="on()"></button> -->
-        <!-- <img src="https://i.postimg.cc/KjK1wL3c/bulb-off.png" id="bulb" width="200"> -->
-
-        <!--CLock design-->
         <div class="timer">
           <span class="timer__part timer__part--mintues">00</span>
           <span class="timer__part">:</span>
           <span class="timer__part timer__part--seconds">00</span>
-          <button class="timer__btn timer__btn--control timer__btn--start" type="button">
+          <button class="timer__btn timer__btn--control timer__btn--start" onclick="showread()" type="button">
             <span class="material-icons">play_arrow</span>
           </button>
           <button type="button" class="timer__btn timer__btn--reset">
             <span class="material-icons">timer</span>
           </button>
         </div>
-     
+        <div id="buttonsContainer"></div>
       
+      </div>
     </center>
-
+ 
+ 
+ 
     <center>
-      <button class="tab-button" id="button2" onclick="datasheet()" disabled>Record</button>
+      <button class="tab-button" id="button2" onclick="datasheet()" >Record</button>
       <!-- <button class="tab-button" onclick="tableSecond()">Record</button> -->
     </center>
+    <div id="table">
    
+      <h2>Data Sheet</h2>
+      <h3 style="margin-left:10%;">Area of measuring tank A = 0.128 m<sup>2</sup></h3>
+      <h3 style="margin-left:10%; ">Diameter of pipe d = 0.02 m</h3>
+      <h3 style="margin-left:10%; ">H = 1 m of water</h3>
+      <h3 style="margin-left:10%; ">Density of water (&rho;) = 1000 kg/m<sup>3</sup></h3>
+      
+        
+        <h3 style="margin:2% 0 0 10% ; font-size:25px; color:rgb(4, 0, 128); ">Formulae:</h3><br>
+        
+        <h3 style="margin-left:10%; ">Discharge Q=(A*R)/t m<sup>3</sup>/sec</h3><br>
+        
+        <h3 style="margin-left:10%; ">Pump Output (P<sub>o</sub>)=(&rho;*g*Q*H)/1000 kW</h3><br>
+        <h3 style="margin-left:10%; ">Pump efficiency &eta;<sub>&rho;</sub>=E<sub>o</sub>*100/E<sub>s</sub>%</h3><br>
+        
+        <h3 style="margin-left:10%; margin-bottom:2%;">Overall efficiency &eta;<sub>o</sub>=E<sub>o</sub>*100/E<sub>i</sub>%</h3>
+        
+        <table id="tab">
+        
+        <tr>
+          
+          <th  >SNo.</th>
+          <th  >Speed of pump N(RPM)</th>
+          <th >Delivery pressure P<sub>d</sub>(kg/cm<sup>2</sup>)</th>
+          <th >Suction pressure P<sub>s</sub>(mmHg)</th>
+          <th >R<sub>1</sub>(cm)</th>
+          <th >R<sub>2</sub>(cm)</th>
+          <th >R(cm)</th>
+          <th >t(sec)</th>
+          <th >Discharge Q(m<sup>3</sup>/sec)</th>
+         
+  
+  
+        </tr>
+       
+  
+        <tr>
+          <td  id="sno">1</td>
+          <td  id="n"> </td>
+          <td  id="pd"> </td>
+         
+          <td  id="ps"> </td>
+          <td  id="r1"> </td>
+          <td  id="r2"> </td>
+          <td  id="r"> </td>
+          <td  id="t"> </td>
+         <td  id="q"><input type="text" placeholder="Enter calculated value"> </td>
+        <!-- <td  id="h"><input type="text" placeholder="Enter calculated value"> </td>
+       -->
+        </tr>
+        <tr>
+          <td  id="sno">2</td>
+          <td  id="nb"> </td>
+          <td  id="pdb"> </td>
+         
+          <td  id="psb"> </td>
+          <td  id="r1b"> </td>
+          <td  id="r2b"> </td>
+          <td  id="rb"> </td>
+          <td  id="tb"> </td>
+         <td  id="q"><input type="text" placeholder="Enter calculated value"> </td>
+        <!-- <td  id="h"><input type="text" placeholder="Enter calculated value"> </td>
+       -->
+        </tr>
+        <tr>
+          <td  id="sno">2</td>
+          <td  id="nc"> </td>
+          <td  id="pdc"> </td>
+         
+          <td  id="psc"> </td>
+          <td  id="r1c"> </td>
+          <td  id="r2c"> </td>
+          <td  id="rc"> </td>
+          <td  id="tc"> </td>
+         <td  id="q"><input type="text" placeholder="Enter calculated value"> </td>
+        <!-- <td  id="h"><input type="text" placeholder="Enter calculated value"> </td>
+       -->
+        </tr>
+        <tr>
+          <td  id="sno">2</td>
+          <td  id="nd"> </td>
+          <td  id="pdd"> </td>
+         
+          <td  id="psd"> </td>
+          <td  id="r1d"> </td>
+          <td  id="r2d"> </td>
+          <td  id="rd"> </td>
+          <td  id="td"> </td>
+         <td  id="q"><input type="text" placeholder="Enter calculated value"> </td>
+        <!-- <td  id="h"><input type="text" placeholder="Enter calculated value"> </td>
+       -->
+        </tr>
+      </table>
+  
+      <br /><br />
+  
+  
+     
+      
+      
+   <table id="tab">
+       
+       <tr>
+        <th  >Pulses of energy <br> meter(P) </th>
+        <th  >Time Taken by <br> pulses t<sub>p</sub>(sec)</th>
+          
+          <th>Pump Input <br> E<sub>i</sub>(kW)</th>
+          <th>Shaft Output <br>E<sub>s</sub>(kW)</th>
+          <th>Total Head H(m)</th>
+          <th>Pump Output<br> E<sub>o</sub>(kW)</th>
+          <th>Pump Efficiency<br> &eta;<sub>&rho;</sub>(%)</th>
+         <th >Overall Efficiency &eta;<sub>o</sub>(%)</th>
+          
+       </tr>
+  
+        <tr>
+          <td  id="p"></td>
+          <td  id="tp"> </td>
+          <td  id="ei"> </td>
+         
+          
+          <td  id="es"> </td>
+          <td  id="h"> </td>
+          <td  id="eo"><input type="text" placeholder="Enter calculated value"> </td>
+          <td  id="np"><input type="text" placeholder="Enter calculated value"> </td>
+          
+          <td  id="no"><input type="text" placeholder="Enter calculated value"> </td>
+           
+        
+        </tr>
+        <tr>
+          <td  id="pa"></td>
+          <td  id="tpa"> </td>
+          <td  id="eia"> </td>
+         
+          
+          <td  id="esa"> </td>
+          <td  id="ha"> </td>
+          <td  id="eo"><input type="text" placeholder="Enter calculated value"> </td>
+          <td  id="np"><input type="text" placeholder="Enter calculated value"> </td>
+          
+          <td  id="no"><input type="text" placeholder="Enter calculated value"> </td>
+           
+        </tr>
+        <tr>
+          <td  id="pb"></td>
+          <td  id="tpb"> </td>
+          <td  id="eib"> </td>
+         
+          
+          <td  id="esb"> </td>
+          <td  id="hb"> </td>
+          <td  id="eo"><input type="text" placeholder="Enter calculated value"> </td>
+          <td  id="np"><input type="text" placeholder="Enter calculated value"> </td>
+          
+          <td  id="no"><input type="text" placeholder="Enter calculated value"> </td>
+           
+        
+        </tr>
+        <tr>
+          <td  id="pc"></td>
+          <td  id="tpc"> </td>
+          <td  id="eic"> </td>
+         
+          
+          <td  id="esc"> </td>
+          <td  id="hc"> </td>
+          <td  id="eo"><input type="text" placeholder="Enter calculated value"> </td>
+          <td  id="np"><input type="text" placeholder="Enter calculated value"> </td>
+          
+          <td  id="no"><input type="text" placeholder="Enter calculated value"> </td>
+           
+        
+        </tr>
+  
+        </tr>
+      </table>
 
 
    
   </div>
   </div>
   <script src="js/record.js"></script>
-
-  <script src="js/valve.js"></script>
   <script src="js/clock.js"></script>
+  <script src="js/valve.js"></script>
 </body>
 
 </html>
