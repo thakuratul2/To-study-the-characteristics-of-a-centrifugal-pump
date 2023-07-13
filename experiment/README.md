@@ -15,6 +15,9 @@ Centrifugal pump is a mechanical device, which consists of a body, impeller and 
 
 <img src="images/formula1.png"/>
 
+<br>
+<img src="images/formula2.png"/>
+
 ### EXPERIMENTAL SET UP
 Centrifugal pumps Test Rig consists a sump, a centrifugal pump, a Dc motor and measuring tank. To measure the head, pressure and vacuum gauges are provided. To measure the discharge, a measure ring tank is provided, flow diversion system is provided to divert flow sump tank to measuring tank and from measuring tank to sump tank.
 
