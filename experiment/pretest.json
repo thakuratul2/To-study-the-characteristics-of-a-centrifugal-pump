@@ -3,57 +3,47 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "When is orifice called large orifice?",
+        "question": "Centrifugal pump is a_________",
         "answers": {
-          "a": "If the head of liquid is less than 5 times the depth of orifice",
-          "b": "If the head of liquid is less than 2.5 times the depth of orifice",
-          "c": "If the head of liquid is less Hence, 4 times the depth of orifice",
-          "d": "If the head of liquid is less than 1.5 times the depth of orifice"
+          "a": "Turbomachinery",
+          "b": "Flow regulating device",
+          "c": "Drafting device",
+          "d": "Intercooling device"
         },
       
         "correctAnswer": "a",
         "difficulty": "beginner"
       },
+    
       {
-        "question": "In case of any orifice, velocity always remains constant and hence discharge can be calculated",
-        "answers": {
-          "a": "True",
-          "b": "False"
-          
-        },
-        
-        "correctAnswer": "b",
-        "difficulty": "beginner"
-      },
-      {
-        "question":"Find the discharge through a rectangular orifice 2.2 m wide and 1.3 m deep fitted to a easier tank. The water level in a team is 2.5 m above the top edge of orifice.",
+        "question":"Turbomachines work under ________",
         "answers":{
-          "a":"13.9 m3/s",
-          "b":"11.5 m3/s",
-          "c":"16.9 m3/s",
-          "d":"16.9 m3/s"
+          "a":"Newtons first law",
+          "b":"Newtons second law",
+          "c":"Newtons third law",
+          "d":"Kepler’s law"
         },
-        "correctAnswer":"a",
+        "correctAnswer":"b",
         "difficulty":"beginner"
       },
       {
-        "question":"Find the discharge through a rectangular orifice 3.2 m wide and 1.7 m deep fitted to a easier tank. The water level in a team is 3.3 m above the top edge of orifice. Take Cd = 0.6",
+        "question":"The main function of centrifugal pumps are to ________",
         "answers":{
-          "a":"29.4 m3/s",
-          "b":"58.5 m3/s",
-          "c":"67.9 m3/s",
-          "d":"78.7 m3/s"
+          "a":"Transfer speed",
+          "b":"Transfer pressure",
+          "c":"Transfer temperature",
+          "d":"Transfer energy"
         },
-        "correctAnswer":"a",
+        "correctAnswer":"d",
         "difficulty":"beginner"
       },
       {
-        "question":"Find the discharge through totally drowned orifice of width 2.3 m if the difference of water levels on both side of the orifice be 40 cm. The height of water from to and bottom of the orifice are 2.6 m and 2.75 m respectively.",
+        "question":"Centrifugal pumps transfer energy from _______",
         "answers":{
-          "a":".56 m3/s",
-          "b":".64 m3/s",
-          "c":".75 m3/s",
-          "d":".55 m3/s"
+          "a":"Rotor to fluid",
+          "b":"Fluid to rotor",
+          "c":"Draft to rotor",
+          "d":"Rotor to draft"
         },
         "correctAnswer":"a",
         "difficulty":"beginner"
