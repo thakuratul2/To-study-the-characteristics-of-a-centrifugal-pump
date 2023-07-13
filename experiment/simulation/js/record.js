@@ -1,7 +1,4 @@
-function bulb_on(){
- document.getElementById("led").style.visibility = "visible";
 
-}
 
 
 

@@ -28,7 +28,7 @@
         background-color: #f44336;
       }
      #led{
-      visibility: hidden;
+      visibility: visible;
      }
       #blink{
         width:50px;
