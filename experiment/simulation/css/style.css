@@ -204,7 +204,11 @@
   display: flex;
   float: left;
   bottom: 103px;
+  
   left: 70px;
+}
+.timer__btn--stop{
+  position: relative;
 }
 .rpm_reading2{
   font-size: 17px;

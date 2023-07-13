@@ -52,7 +52,20 @@ class Timer {
         this.el.control.classList.remove("timer__btn--start");
       }
     }
-  
+    displayRandomValue() {
+      const randomValue = Math.floor(Math.random() * 100) + 1;
+      const randomValue2 = Math.floor(Math.random() * 100)+1;
+      // const randomValueElement = document.createElement("div");
+      // randomValueElement.textContent = "Random Value: " + randomValue;
+      // document.body.appendChild(randomValueElement);
+      const rpmReadingElement = document.querySelector(".rpm_reading");
+      const rpmReadingElement2 = document.querySelector(".rpm_reading2");
+      
+  rpmReadingElement.textContent = "H 1: " + randomValue;
+  rpmReadingElement2.textContent = "H 2: "+randomValue2;
+      //console.log(randomValue);
+    }
+    
     start() {
       if (this.remainingSeconds === 0) return;
   
@@ -70,11 +83,15 @@ class Timer {
   
     stop() {
       clearInterval(this.interval);
-  
+      
       this.interval = null;
   
       this.updateInterfaceControls();
+
+      this.displayRandomValue();
     }
+
+    
   
     static getHTML() {
       return `
