@@ -13,29 +13,27 @@
       }
      
       .offlight{
-        width:50px;
-        height:50px;
+        width:40px;
+        height:38px;
         position: absolute;
-        top:58%;
-        left:69px;
+        top:64%;
+        left:75px;
       }
       #on{
         position: absolute;
         top:40%;
         left:70px;
       }
-      #on:after{
-        background-color: #f44336;
-      }
+     
      #led{
       visibility: visible;
      }
       #blink{
-        width:50px;
-        height:50px;
-        position: absolute;
-        top:58%; 
-        left:69px;
+        width: 40px;
+    height: 36px;
+    position: absolute;
+    top: 64%;
+    left: 74px;
         
       }
       #value{
@@ -143,8 +141,11 @@
       }
       
       .timer__part {
-        font-size: 36px;
-        font-weight: bold;
+        font-size: 26px;
+    font-weight: bold;
+    position: relative;
+    top: 250px;
+    right: 44px;
       }
       
       .timer__btn {
@@ -154,6 +155,9 @@
         border-radius: 50%;
         border: none;
         color: white;
+    position: relative;
+    top: 236px;
+    right: 32px;
         background: #8208e6;
         cursor: pointer;
       }
@@ -170,14 +174,14 @@
       .para{
         background-color: yellow;
         position: absolute;
-        top:10%;
-        left:200px;
+        top: 43%;
+    left: 168px;
       }
        .para1{
         background-color: yellow;
         position: absolute;
-        top:10%;
-        left:290px;
+        top: 43%;
+        left: 246px;
        }    
 
 .container {
