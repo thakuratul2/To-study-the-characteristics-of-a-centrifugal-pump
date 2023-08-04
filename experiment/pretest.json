@@ -50,51 +50,122 @@
         "difficulty":"beginner"
       },
       {
-        "question":"Find the discharge through totally drowned orifice of width 3.3 m if the difference of water levels on both side of the orifice be 50 cm. The height of water from to and bottom of the orifice are 2.25 m and 2.67 m respectively.",
+        "question":"Which among the following control the flow rate?",
         "answers":{
-          "a":"2.8 m3/s",
-          "b":"2.7 m3/s",
-          "c":"2.6 m3/s",
-          "d":"2.5 m3/s"
+          "a":"Valve",
+          "b":"Pump",
+          "c":"Head",
+          "d":"Tank pipe"
         },
         "correctAnswer":"a",
         "difficulty":"beginner"
       },{
-        "question":"A rectangular orifice of 2 m width and 1.2 m deep is fitted in one side of large tank. The easier level on one side of the orifice is 3m above the top edge of the orifice while on the other side of the orifice the water level is 0.5 m below it’s top edge. Calculate discharge if Cd = .64",
+        "question":"The inlet passage of water entry is controlled by ________",
         "answers":{
-          "a": "4.95 m3/s",
-          "b": "5.67 m3/s",
-          "c": "3.56 m3/s",
-          "d": "6.75 m3/s"
+          "a": "Head race",
+          "b": "Gate",
+          "c": "Tail race",
+          "d": "Pump"
           
+        },
+        "correctAnswer":"b",
+        "difficulty":"beginner"
+      },
+      {
+        "question":"Centrifugal pumps are used to transport ________",
+        "answers":{
+          "a":"Pressure",
+          "b":"Speed",
+          "c":"Power",
+          "d":"Fluid"
+        },
+        "correctAnswer":"d",
+        "difficulty":"beginner"
+      },
+      {
+        "question":"Centrifugal pumps transport fluids by converting _________",
+        "answers":{
+          "a":"Kinetic energy to hydrodynamic energy",
+          "b":"Hydrodynamic energy to kinetic energy",
+          "c":"Mechanical energy to kinetic energy",
+          "d":"Mechanical energy to Hydrodynamic energy"
         },
         "correctAnswer":"a",
         "difficulty":"beginner"
       },
       {
-        "question":"The time taken to empty the tank is independent of Cd but depends only on the height and acceleration due to gravity.",
+        "question":"The rotational kinetic energy comes from ______",
         "answers":{
-          "a":"True",
-          "b":"False"
+          "a":"Engine motor",
+          "b":"Pump",
+          "c":"Tank",
+          "d":"Draft tube"
+        },"correctAnswer":"a",
+        "difficulty":"beginner"
+      },{
+        "question":"The fluid coming into the centrifugal pump is accelerated by ________",
+        "answers":{
+          "a":"Throttle",
+          "b":"Impeller",
+          "c":"Nozzle",
+          "d":"Governor"
         },
         "correctAnswer":"b",
         "difficulty":"beginner"
       },
       {
-        "question":"The discharge rate is independent of the height difference and dependent only on the height.",
+        "question":"The fundamental significance of all the turbomachinery is _______",
         "answers":{
-          "a":"True",
-          "b":"False"
+          "a":"Conservation of momentum",
+          "b":"Conservation of mass",
+          "c":"Conservation of heat",
+          "d":"Conservation of speed"
+        },
+        "correctAnswer":"a",
+        "difficulty":"beginner"
+      },
+      {
+        "question":"The change of angular momentum in a pump is equal to the _________",
+        "answers":{
+          "a":"Sum of speeds",
+          "b":"Sum of individual momentum",
+          "c":"Sum of temperatures",
+          "d":"Sum of energy transferred from a body"
         },
         "correctAnswer":"b",
         "difficulty":"beginner"
       },
       {
-        "question":"In case of submerged orifice the discharge is substantially dependent on temperature of fluid",
+        "question":"Conservation of angular momentum is described by _______",
         "answers":{
-          "a":"True",
-          "b":"False"
-        },"correctAnswer":"b",
+          "a":"Newtons equation",
+          "b":"Euler’s equation",
+          "c":"Rutherford’s equation",
+          "d":"Maxim equation"
+        },
+        "correctAnswer":"b",
+        "difficulty":"beginner"
+      },
+      {
+        "question":"Vertical Centrifugal pumps are also called as _________",
+        "answers":{
+          "a":"Cantilever pumps",
+          "b":"Hydrodynamic pump",
+          "c":"Mechanical pump",
+          "d":"Hydroelectric pump"
+        },
+        "correctAnswer":"a",
+        "difficulty":"beginner"
+      },
+      {
+        "question":"With the increase in load, Energy in the turbine________",
+        "answers":{
+          "a":"Decreases",
+          "b":"Increases",
+          "c":"Remains same",
+          "d":"Independent"
+        },
+        "correctAnswer":"a",
         "difficulty":"beginner"
       }
     ]
