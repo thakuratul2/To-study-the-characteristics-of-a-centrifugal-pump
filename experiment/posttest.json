@@ -3,79 +3,78 @@
 "version": 2.0,
 "questions": [
   {
-    "question": "The ratio of actual discharge of a jet of water at vena-contracta to the theoretical discharge is known as ?",
+    "question": "The fluid gains _________ while passing through the impeller.",
     "answers": {
-      "a": "co-efficient of discharge",
-      "b": "co-efficient of velocity",
-      "c": "co-efficient of contraction",
-      "d": "co-efficient of viscosity"
+      "a": "Velocity",
+      "b": "Pressure",
+      "c": "Temperature",
+      "d": "Velocity and pressure"
     },
     
-    "correctAnswer": "a",
+    "correctAnswer": "d",
     "difficulty": "beginner"
   },
   {
-    "question": "The ratio of actual velocity of a jet of water at vena-contracta to the theoretical velocity is known as ?",
+    "question": "What is the shape of the diffuser in the centrifugal pump?",
     "answers": {
-      "a": "co-efficient of discharge",
-      "b": "co-efficient of velocity",
-      "c": "co-efficient of contraction",
-      "d": "co-efficient of viscosity"
+      "a": "Round",
+      "b": "Dough nut",
+      "c": "Rectangle",
+      "d": "Cylindrical"
     },
     
     "correctAnswer": "b",
     "difficulty": "beginner"
   },
   {
-    "question":"Orifices are used to measure ?",
+    "question":"When the casing in a centrifugal pump decelerates the flow, what increases?",
     "answers":{
-      "a": "velocity",
-      "b": "Pressure",
-      "c": "Rate of flow",
-      "d":"None of the above"
+      "a": "Pressure",
+      "b": "Temperature",
+      "c": "Volume",
+      "d":"Flow Rate"
     },
-    "correctAnswer":"c",
+    "correctAnswer":"a",
     "difficulty":"beginner"
   },{
-    "question": "The co-efficient of discharge (Cd)?",
+    "question": "The velocity imparted by the impeller is converted into _________",
     "answers":{
-      "a": "co-efficient of discharge",
-      "b": "co-efficient of velocity",
-      "c": "co-efficient of contraction",
-      "d": "co-efficient of viscosity"
+      "a": "Pressure energy",
+      "b": "Kinetic energy",
+      "c": "Momentum",
+      "d": "Potential energy"
     },
-    "correctAnswer": "c",
+    "correctAnswer": "a",
     "difficulty":"beginner"
   },
   {
-    "question":"In case of flow through orifices, the coefficient of velocity at vena-contacta is",
+    "question":"The consequence of Newtons second law is_________",
     "answers":{
-      "a": "Equal to zero",
-      "b": "Equal to one",
-      "c":"Greater than one",
-      "d": "Less than one"
+      "a": "Conservation of angular momentum",
+      "b": "Conservation of mass",
+      "c":"Conservation of potential energy",
+      "d": "Conservation of kinetic energy"
     },
-    "correctAnswer":"d",
+    "correctAnswer":"a",
     "difficulty":"beginner"
   },
   {
-    "question": "The discharge through a large rectangular orifice is? where b=width of orifice,H1=Height of liquid above top edge of the orifice,H2=Height of liquid above bottom edge of the orifice.",
+    "question": "Euler developed the head pressure equation in centrifugal pumps.",
     "answers":{
-      "a":"2/3 C_d×b×√2g(√(H_2 )-√H_1",
-      "b": 	"8/15 C_d×b×√2g(〖H_2〗^(3/2)-〖H_1〗^(3/2))",
-      "c": "2/3 C_d×b×√2g(〖H_2〗^(3/2)-〖H_1〗^(3/2))",
-      "d":"None of the above"
+      "a":"True",
+      "b": "False"
+      
     },
-    "correctAnswer":"c",
+    "correctAnswer":"a",
     "difficulty":"beginner"
   },
   {
-    "question":"The discharge through fully submerged orifice is? where H=Difference of liquid levels on both sides of the orifice, H1=Height of liquid above top edge orifice of upstream side, H2=Height of liquid above bottom edge of orifice on upstream side.",
+    "question":"What is a major advantage of centrifugal pump?",
     "answers":{
-      "a": "C_d×b×(H_2-H_1)×√2g×H^(3/2)",
-      "b":"C_d×b×(H_2-H_1)×√2gH",
-      "c": "C_d×b×(H_2^(3/2)-H_1^(3/2))×√2gH",
-      "d": "None of the above"
+      "a": "Cost",
+      "b":"Simple in construction",
+      "c": "Efficiency",
+      "d": "Pump parameters"
     },
     "correctAnswer":"b",
     "difficulty":"beginner"
