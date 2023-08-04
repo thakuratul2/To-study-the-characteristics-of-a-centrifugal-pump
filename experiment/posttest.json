@@ -80,23 +80,34 @@
     "difficulty":"beginner"
   },
   {
-    "question":"The co-efficient of discharge (Cd) in terms of (Cv) and (Cc) is ?",
+    "question":"Centrifugal pumps are used to transport ________",
     "answers":{
-      "a":"C_d=C_v/C_c",
-      "b":"C_d=C_c×C_v",
-      "c":"C_d=C_c/C_v",
-      "d":"None of the above"
+      "a":"Pressure",
+      "b":"Speed",
+      "c":"Power",
+      "d":"Fluid"
     },
-    "correctAnswer":"b",
+    "correctAnswer":"d",
     "difficulty":"beginner"
   },
   {
-    "question":"The co-efficient of velocity (Cv) for an orifice is ?",
+    "question":"Different velocities in a centrifugal pump are determined by using ________",
     "answers":{
-      "a":"C_v=√(4x^2)/yH",
-      "b":"C_v=2x/(√4yH)",
-      "c":"C_v=√x^2/4yH",
-      "d":"None of the above"
+      "a":"Velocity triangle",
+      "b":"Reynolds number",
+      "c":"Froude number",
+      "d":"Overall efficiency"
+    },
+    "correctAnswer":"a",
+    "difficulty":"beginner"
+  },
+  {
+    "question":"With the increase in the input power, efficiency _______",
+    "answers":{
+      "a":"Increases",
+      "b":"Decreases",
+      "c":"Same",
+      "d":"Independent"
     },
     "correctAnswer":"b",
     "difficulty":"beginner"
