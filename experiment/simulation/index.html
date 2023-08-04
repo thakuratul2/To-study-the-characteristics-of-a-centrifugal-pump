@@ -30,20 +30,17 @@
               <img src="./images/led-yellow.gif" alt="" id="blink" class="onlight">
             </div>
          <p class="para">Start RPM</p>
-         <p class="para1">Set RPM</p>
+         
         
 
         <div class="timer">
-          <span class="timer__part timer__part--mintues">00</span>
-          <span class="timer__part">:</span>
-          <span class="timer__part timer__part--seconds">00</span>
+          <span class="timer__part timer__part--mintues" id="timer">00</span>
+        
           <button class="timer__btn timer__btn--control timer__btn--start" onclick="showread()" type="button">
-            <span class="material-icons">play_arrow</span>
+            <span class="material-icons" id="startButton">play_arrow</span>
           </button>
           
-          <button type="button" class="timer__btn timer__btn--reset">
-            <span class="material-icons">timer</span>
-          </button>
+          
           
         </div>
         <div id="buttonsContainer"></div>
@@ -244,8 +241,9 @@
   </div>
   </div>
   <script src="js/record.js"></script>
-  <script src="js/clock.js"></script>
+  <!-- <script src="js/clock.js"></script> -->
   <script src="js/valve.js"></script>
+  <script src="js/test.js"></script>
 </body>
 
 </html>

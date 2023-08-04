@@ -111,8 +111,8 @@
       }
       #timer {
         position: absolute;
-        top: 50px;
-        left: 660px;
+        top: 256px;
+        right: 100px;
         height: 100px;
         width: 100px;
         font-size: 28px;
@@ -151,14 +151,14 @@
       .timer__btn {
         width: 50px;
         height: 50px;
-        margin-left: 16px;
+        margin-left: 19px;
         border-radius: 50%;
         border: none;
         color: white;
-    position: relative;
-    top: 236px;
-    right: 32px;
-        background: #8208e6;
+        position: relative;
+        top: 236px;
+        right: -16px;
+        background-color: violet;
         cursor: pointer;
       }
       
@@ -175,7 +175,7 @@
         background-color: yellow;
         position: absolute;
         top: 43%;
-    left: 168px;
+    left: 200px;
       }
        .para1{
         background-color: yellow;
