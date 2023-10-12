@@ -13,10 +13,10 @@ that point. Thus at the outlet of the impeller where radius is more, the rise in
 
 Centrifugal pump is a mechanical device, which consists of a body, impeller and a rotating mean e. Motor, Engine etc. impeller rolates in a stationary body and sucks the fluid through its axes and delivers through its periphery. Impeller has an inlet angle, outlet angle and peripheral speed, which affect the head and discharge. Impeller is rotated by motor or i.c engine or any other device.
 
-<img src="images/formula1.png"/>
+<img src="./images/formula1.png"/>
 
 <br>
-<img src="images/formula2.png"/>
+<img src="./images/formula2.png"/>
 
 ### EXPERIMENTAL SET UP
 Centrifugal pumps Test Rig consists a sump, a centrifugal pump, a Dc motor and measuring tank. To measure the head, pressure and vacuum gauges are provided. To measure the discharge, a measure ring tank is provided, flow diversion system is provided to divert flow sump tank to measuring tank and from measuring tank to sump tank.
