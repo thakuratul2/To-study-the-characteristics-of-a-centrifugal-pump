@@ -16,6 +16,7 @@ Centrifugal pump is a mechanical device, which consists of a body, impeller and 
 <img src="./images/formula1.png"/>
 
 <br>
+
 <img src="./images/formula2.png"/>
 
 ### EXPERIMENTAL SET UP
