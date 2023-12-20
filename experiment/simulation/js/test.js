@@ -65,6 +65,7 @@ function displayRandomValue() {
 
 function stopTimer() {
     clearInterval(intervalId);
+    
     document.getElementById("toggleButton");
     timerRunning = false;
   }
