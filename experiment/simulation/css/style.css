@@ -109,6 +109,27 @@
         background-color: rgb(230, 230, 62);
         border: 1px black solid;
       }
+      .instruction{
+        position: absolute;
+        height: 250px;
+        width: 270px;
+        top: 900px;
+        left: 900px;
+        border: 2px black solid;
+      }
+      .instruction h2{
+        text-align: center;
+        
+        font-size: 25px;
+        
+        font-weight: bold;
+        
+        text-decoration: underline;
+      }
+      .instruction p{
+        
+        margin-left: 15px;
+      }
       #timer {
         position: absolute;
         top: 256px;
